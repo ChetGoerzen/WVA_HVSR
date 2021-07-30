@@ -58,7 +58,7 @@ ymax = 10
 
 data_path = "/mnt/readynas5/cgoerzen/NZ3DFWI/wfs/CUBES_data/3CASDF/*.h5"
 data_files = glob.glob(data_path)
-station = "3C_BS10"
+station = "3C_BS32"
 tmp_station = station.replace("_", ".")
 for data_file in data_files:
 
