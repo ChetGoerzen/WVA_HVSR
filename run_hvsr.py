@@ -9,9 +9,9 @@ from hvsrpy import utils
 
 # Time domain settings
 # --------------------------------------------------------------------------- #
-windowlength = 60
+windowlength = 1000
 filter_bool = True # No filtering
-filter_flow = 0.2
+filter_flow = 0.1
 filter_fhigh = 9
 filter_order = 5
 
@@ -24,7 +24,7 @@ width = 0.1
 # Konno-Ohmachi smoothing constant
 bandwidth = 40
 
-resample_fmin = 0.1
+resample_fmin = 0.01
 resample_fmax = 10
 resample_fnum = 200
 resample_type = 'log'
