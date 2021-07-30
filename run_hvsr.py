@@ -9,10 +9,10 @@ from hvsrpy import utils
 
 # Time domain settings
 # --------------------------------------------------------------------------- #
-windowlength = 1000
+windowlength = 2000
 filter_bool = True # No filtering
-filter_flow = 0.1
-filter_fhigh = 9
+filter_flow = 0.005
+filter_fhigh = 2
 filter_order = 5
 
 # Width of cosine taper
@@ -24,14 +24,14 @@ width = 0.1
 # Konno-Ohmachi smoothing constant
 bandwidth = 40
 
-resample_fmin = 0.01
-resample_fmax = 10
+resample_fmin = 0.005
+resample_fmax = 2
 resample_fnum = 200
 resample_type = 'log'
 
 # Upper and lower frequency limits to restrict peak selection. To use the entire range use `None`.
-peak_f_lower = None
-peak_f_upper = None
+peak_f_lower = 0.005
+peak_f_upper = 2
 # --------------------------------------------------------------------------- #
 
 # HVSR settings
