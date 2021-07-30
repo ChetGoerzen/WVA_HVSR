@@ -9,9 +9,9 @@ from hvsrpy import utils
 
 # Time domain settings
 # --------------------------------------------------------------------------- #
-windowlength = 1200
+windowlength = 1800
 filter_bool = True # No filtering
-filter_flow = 0.1
+filter_flow = 0.006
 filter_fhigh = 9.9
 filter_order = 5
 
@@ -24,14 +24,14 @@ width = 0.1
 # Konno-Ohmachi smoothing constant
 bandwidth = 40
 
-resample_fmin = 0.05
+resample_fmin = 0.005
 resample_fmax = 10
 resample_fnum = 200
 resample_type = 'log'
 
 # Upper and lower frequency limits to restrict peak selection. To use the entire range use `None`.
-peak_f_lower = 0.1
-peak_f_upper = 10
+peak_f_lower = 0.006
+peak_f_upper = 9.9
 # --------------------------------------------------------------------------- #
 
 # HVSR settings
@@ -58,7 +58,7 @@ ymax = 10
 
 data_path = "/mnt/readynas5/cgoerzen/NZ3DFWI/wfs/CUBES_data/3CASDF/*.h5"
 data_files = glob.glob(data_path)
-station = "3C_BS04"
+station = "3C_BS09"
 tmp_station = station.replace("_", ".")
 for data_file in data_files:
 
