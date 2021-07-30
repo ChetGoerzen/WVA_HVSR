@@ -9,7 +9,7 @@ from hvsrpy import utils
 
 # Time domain settings
 # --------------------------------------------------------------------------- #
-windowlength = 1800
+windowlength = 3600
 filter_bool = True # No filtering
 filter_flow = 0.006
 filter_fhigh = 9.9
